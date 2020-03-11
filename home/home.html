@@ -2,5 +2,10 @@
 <p>
   <label>name:</label>
   <input type="text" ng-model="$ctrl.name">
-  <input type="button" ng-click="$ctrl.reset()" value="Reset">
+  <input type="button" ng-click="$ctrl.addItem()" value="add">
+  <table>
+  <tr ng-repeat="x in $ctrl.tableItems">
+    <td>{{ x }}</td>
+  </tr>
+</table>
 </p>
