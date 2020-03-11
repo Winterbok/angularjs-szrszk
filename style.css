@@ -1,3 +1,40 @@
 h1, p {
   font-family: Lato;
 }
+.box1{
+  width: 80%;
+  margin: auto;
+  padding: none;
+  align-self: center;
+}
+/*===table===*/
+table{
+  font-family: lucida sans unicode,lucida grande,Sans-Serif;
+  font-size: 12px;
+  background: #fff;
+  width: 40%;
+  border-collapse: collapse;
+  text-align: center;
+  margin: 20px;
+  box-shadow: 2px 2px 4px #000000;
+}
+/*===header===*/
+th{
+  color: darkblue;
+  padding: 3%;
+  border-bottom: 2px solid lightblue;
+}
+
+/*row*/
+tr:hover{background: lightblue;}
+tr:not(:hover):nth-child(even){background: #EEE;}
+/*data*/
+td{
+  color: #777;
+  padding: 3%;
+}
+/*===footer===*/
+tfoot{
+  border-top: 2px solid lightblue;
+  border-bottom: hidden;
+}
