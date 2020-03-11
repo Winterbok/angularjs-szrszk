@@ -1,49 +1,46 @@
 <h1>Hello {{$ctrl.name}}!</h1>
-<p>
+<p></p>
 
-	<form>
-		<label>Name:</label>
-		<input type="text" ng-model="$ctrl.name"></br>
-		<label>Age:</label>
-		<input type="text" ng-model="$ctrl.age"></br>
-		<input type="button" ng-click="$ctrl.addItem()" value="Add">
-		<input type="button" ng-click="$ctrl.reset()" value="Reset">
+<form>
+	<label>Name:</label>
+	<input type="text" ng-model="$ctrl.name"></br>
+	<label>Age:</label>
+	<input type="text" ng-model="$ctrl.age"></br>
+	<input type="button" ng-click="$ctrl.addItem()" value="Add">
+	<input type="button" ng-click="$ctrl.reset()" value="Reset">
 
-  </form>
+</form>
 
-		<table>
+<table>
 
-			<!-- Table header -->
+	<!-- Table header -->
 
-			<thead>
-				<tr>
-					<th scope="col" id="Place">Place</th>
-					<th scope="col" id="Run 1">Name</th>
-					<th scope="col" id="Run 2">Age</th>
-				</tr>
-			</thead>
+	<thead>
+		<tr>
+			<th scope="col" id="Place">Place</th>
+			<th scope="col" id="Run 1">Name</th>
+			<th scope="col" id="Run 2">Age</th>
+		</tr>
+	</thead>
 
-			<!-- Table body -->
+	<!-- Table body -->
 
-			<tbody>
-				<tr ng-repeat="x in $ctrl.tableItems | orderBy : 'age'"">
-          <td>{{ $index + 1 }}</td>
-          <td>{{ x.name }}</td>
-          <td>{{ x.age }}</td>
-        </tr>
-			</tbody>
+	<tbody>
+		<tr ng-repeat="x in $ctrl.tableItems | orderBy : 'age'"">
+      <td>{{ $index + 1 }}</td>
+      <td>{{ x.name }}</td>
+      <td>{{ x.age }}</td>
+   </tr>
+	</tbody>
 
-			<!-- Table footer -->
+	<!-- Table footer -->
 
-			<tfoot>
-				<tr>
-					<td>Avg.</td>
-					<td></td>
-					<td>x</td>
-				</tr>
-			</tfoot>
-
+	<tfoot>
+		<tr>
+			<td>Avg.</td>
+			<td></td>
+			<td>x</td>
+		</tr>
+	</tfoot>
 
 </table>
-
-</p>
