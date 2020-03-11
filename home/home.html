@@ -1,11 +1,19 @@
 <h1>Hello {{$ctrl.name}}!</h1>
 <p>
-  <label>name:</label>
-  <input type="text" ng-model="$ctrl.name">
-  <input type="button" ng-click="$ctrl.addItem()" value="add">
+
+  <form>
+    <label>Name:</label>
+    <input type="text" ng-model="$ctrl.name"></br>
+    <label>Age:</label>
+    <input type="text" ng-model="$ctrl.age"></br>
+    <input type="button" ng-click="$ctrl.addItem()" value="add">
+  </form>
+
   <table>
-  <tr ng-repeat="x in $ctrl.tableItems">
-    <td>{{ x }}</td>
+  <tr ng-repeat="x in $ctrl.tableItems | orderBy : 'age'"">
+    <td>{{ $index + 1 }}</td>
+    <td>{{ x.name }}</td>
+    <td>{{ x.age }}</td>
   </tr>
 </table>
 </p>

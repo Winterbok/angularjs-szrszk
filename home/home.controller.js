@@ -5,14 +5,18 @@ class HomeCtrl {
     this.tableItems = [];
 
     this.name = "AngularJS";
+    this.age = "18"
   }
 
   reset($scope){
-    this.name = "AngularJS";
+    this.tableItems = [];
   }
 
   addItem($scope){
-    this.tableItems.push(this.name);
+    this.tableItems.push({
+      name:this.name,
+      age:this.age
+      });
   }
 
 }
