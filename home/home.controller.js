@@ -4,7 +4,7 @@ class HomeCtrl {
 
     this.tableItems = [];
 
-    this.name = "AngularJS";
+    this.name = "Tester";
     this.age = "18";
   }
 
