@@ -7,6 +7,14 @@ h1, p {
   padding: none;
   align-self: center;
 }
+/*===form===*/
+label{
+  margin-right: 2%;
+}
+input{
+  margin-top: 1%;
+  margin-bottom: 1%;
+}
 /*===table===*/
 table{
   font-family: lucida sans unicode,lucida grande,Sans-Serif;
@@ -23,7 +31,6 @@ th{
   padding: 3%;
   border-bottom: 2px solid lightblue;
 }
-
 /*row*/
 tr:hover{background: lightblue;}
 tr:not(:hover):nth-child(even){background: #EEE;}
