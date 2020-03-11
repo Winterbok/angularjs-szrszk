@@ -1,24 +1,23 @@
 class HomeCtrl {
   constructor($scope) {
-    'ngInject';
+    "ngInject";
 
     this.tableItems = [];
 
     this.name = "AngularJS";
-    this.age = "18"
+    this.age = "18";
   }
 
-  reset($scope){
+  reset($scope) {
     this.tableItems = [];
   }
 
-  addItem($scope){
+  addItem($scope) {
     this.tableItems.push({
-      name:this.name,
-      age:this.age
-      });
+      name: this.name,
+      age: this.age
+    });
   }
-
 }
 
 export default HomeCtrl;
