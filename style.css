@@ -1,11 +1,11 @@
 h1, p {
   font-family: Lato;
 }
-.box1{
-  width: 80%;
-  margin: auto;
-  padding: none;
-  align-self: center;
+#box1{
+  width: 240px;
+  margin: 2px;
+  border: 2px solid lightblue;
+  padding: 10px;
 }
 /*===form===*/
 label{
@@ -20,7 +20,7 @@ table{
   font-family: lucida sans unicode,lucida grande,Sans-Serif;
   font-size: 12px;
   background: #fff;
-  width: 40%;
+  width: 200px;
   border-collapse: collapse;
   text-align: center;
   margin: 20px;
